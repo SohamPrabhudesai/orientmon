@@ -21,23 +21,27 @@ pip install -e .
 ```
 
 ### Requirements
+
 - Python 3.7+
 - Windows 10/11
 
 ## Usage
 
 ### List all monitors
+
 ```bash
 glorb identify
 ```
 
 ### Rotate a monitor
+
 ```bash
 glorb rotate 0 90    # Rotate monitor 0 to 90 degrees
 glorb rotate 1 180   # Rotate monitor 1 to 180 degrees
 ```
 
 ### Control brightness
+
 ```bash
 glorb b 0 0.75       # Set monitor 0 brightness to 75%
 glorb b 1 0.5        # Set monitor 1 brightness to 50%
@@ -63,15 +67,15 @@ Monitor 1 brightness set to 30%
 
 ## Platform Support
 
-| Platform | Status | Features |
-|----------|--------|----------|
-| Windows  | ✅ Ready | Full support |
-| Linux    | 🚧 Coming Soon | Planned for v2.0 |
-| macOS    | 📋 Planned | Future release |
+| Platform | Status      | Features         |
+| -------- | ----------- | ---------------- |
+| Windows  | Ready       | Full support     |
+| Linux    | Coming Soon | Planned for v2.0 |
 
 ## Development
 
 ### Windows Development
+
 ```bash
 git clone https://github.com/yourusername/glorb.git
 cd glorb
@@ -80,6 +84,7 @@ python glorb.py identify  # Test it out
 ```
 
 ### Contributing
+
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
@@ -93,13 +98,10 @@ python glorb.py identify  # Test it out
 - [x] Brightness control (laptop + external)
 - [ ] Linux support (X11/Wayland)
 - [ ] Configuration profiles
-- [ ] Multi-monitor presets
-- [ ] Hotkey support
-- [ ] GUI companion app
 
 ## Why "Glorb"?
 
-Because it's fun to type `glorb rotate 0 90` and watch your screen flip! 🎯
+Mostly because it just rolls right off your tongue... Glorb!
 
 ## License
 
@@ -108,15 +110,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## Troubleshooting
 
 ### Brightness not working
+
 - **Laptop displays**: Should work with WMI on Windows
 - **External monitors**: Requires DDC/CI support (most modern monitors)
 - **Older monitors**: May not support brightness control
-
-### Rotation issues
-- Ensure graphics drivers are up to date
-- Some rotations may not be supported by all graphics cards
-- Try different angles if one doesn't work
-
-## Credits
-
-Built with ❤️ for the multi-monitor community.
